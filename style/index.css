@@ -1,0 +1,106 @@
+header {
+  width: 77%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-bottom: 150px;
+  align-items: flex-start;
+}
+h1 {
+  font-weight: 700;
+  font-family: "PT Serif", serif;
+  font-size: 36px;
+}
+
+header p,
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+
+header p:first-of-type,
+h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+header p:last-of-type {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+header div:first-of-type {
+  width: 50%;
+}
+header div:last-of-type {
+  width: 50%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.caja {
+  width: 28%;
+  margin: auto;
+}
+
+.caja:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.caja2,
+.caja5 {
+  transform: translateY(70px);
+}
+
+.caja img {
+  width: 60%;
+  margin: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 95%;
+    flex-direction: column;
+    margin-bottom: 250px;
+  }
+
+  header div:first-of-type {
+    width: 100%;
+  }
+
+  header div:last-of-type {
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+  }
+
+  .caja2,
+  .caja5 {
+    transform: translateY(0);
+  }
+
+  .caja2,
+  .caja4,
+  .caja6 {
+    transform: translateY(80px);
+  }
+
+  .caja {
+    width: 50%;
+    margin: auto;
+  }
+
+  .caja img {
+    width: 80%;
+  }
+}
